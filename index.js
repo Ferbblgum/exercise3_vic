@@ -1,9 +1,11 @@
 import express from "express";
 import { connectDB } from "./db.js";
 import { Card } from "./models/Card.js";
-const app = express();
-app.use(express.json());
+import dotenv from "dotenv";
+dotenv.config();
+const app = express()
 connectDB();
+app.use(express.json());  
 
 // Metodos HTTP:
 // POST: Es para crear
