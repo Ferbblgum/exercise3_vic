@@ -13,7 +13,7 @@ app.use(express.json());
 // PATCH: Actualizar parcialmente
 // PUT: Actualizar globalmente
 // DELETE: Eliminar
-// DELETE: Eliminar
+
 
 app.post("/cards", async (req, res) => {
   try {
